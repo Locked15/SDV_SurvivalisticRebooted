@@ -2,6 +2,7 @@
 using StardewValley;
 using Survivalistic.Framework.Bars;
 using Survivalistic.Framework.Networking;
+using Survive_Net5.Framework.Common;
 
 namespace Survivalistic.Framework.Common
 {

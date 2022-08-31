@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Survivalistic
+namespace Survive_Net5.Framework.Common
 {
     public class Data
     {

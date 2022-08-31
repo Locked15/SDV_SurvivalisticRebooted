@@ -4,7 +4,7 @@ using Survivalistic.Framework.Interfaces;
 using System;
 using static DaLion.Common.Integrations.WalkOfLife.IImmersiveProfessions;
 
-namespace Survive_Net5
+namespace Survive_Net5.Framework.Integrations
 {
     public class WalkOfLifeIntegration
     {

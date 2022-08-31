@@ -6,8 +6,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Survivalistic.Framework.Bars;
 using Survivalistic.Framework.Common;
 using DaLion.Stardew.Professions.Framework.Ultimates;
-using Survive_Net5;
 using System;
+using Survive_Net5.Framework.Integrations;
 
 namespace Survivalistic.Framework.Rendering
 {

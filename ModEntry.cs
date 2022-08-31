@@ -7,7 +7,8 @@ using Survivalistic.Framework.Databases;
 using Survivalistic.Framework.Interfaces;
 using Survivalistic.Framework.Networking;
 using Survivalistic.Framework.Rendering;
-using Survive_Net5;
+using Survive_Net5.Framework.Common;
+using Survive_Net5.Framework.Integrations;
 
 namespace Survivalistic
 {

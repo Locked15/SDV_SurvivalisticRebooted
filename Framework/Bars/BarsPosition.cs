@@ -1,7 +1,7 @@
 ﻿using StardewValley;
 using StardewModdingAPI;
 using Microsoft.Xna.Framework;
-using Survive_Net5;
+using Survive_Net5.Framework.Integrations;
 
 namespace Survivalistic.Framework.Bars
 {
@@ -77,22 +77,21 @@ namespace Survivalistic.Framework.Bars
             #region Used variables.
 
             float position;
-            bool inDangerPlace = CheckToDangerousLocation(current_location);
-            bool healthIsMaxed = Game1.player.health >= Game1.player.maxHealth;
 
+            bool inDangerous = CheckToDangerous();
             bool ultimateIsVisible = WalkOfLifeIntegration.Instance?.UltimateBarIsCurrentlyVisible ?? false;
             #endregion
 
             // Player is Safe, Ultimate isn't Visible.
-            if (!inDangerPlace && healthIsMaxed && !ultimateIsVisible)
+            if (!inDangerous && !ultimateIsVisible)
                 position = sizeUI.X - 116;
 
             // Player is Safe, Ultimate is Visible.
-            else if (!inDangerPlace && healthIsMaxed && ultimateIsVisible)
+            else if (!inDangerous && ultimateIsVisible)
                 position = sizeUI.X - 171;
 
             // Player isn't Safe, Ultimate isn't Visible.
-            else if ((inDangerPlace || !healthIsMaxed) && !ultimateIsVisible)
+            else if (inDangerous && !ultimateIsVisible)
                 position = sizeUI.X - 171;
 
             // Player isn't Safe, Ultimate is Visible.
@@ -103,8 +102,8 @@ namespace Survivalistic.Framework.Bars
 
         }
 
-        private static bool CheckToDangerousLocation(string locationName) =>
-                            locationName.Contains("UndergroundMine") || locationName.Contains("VolcanoDungeon") || locationName.Contains("Woods");
+        private static bool CheckToDangerous() =>
+                            Game1.showingHealth;
 
         private static bool CheckCavernLevelIsVisible(string locationName) =>
                             current_location.Contains("UndergroundMine") || current_location.Contains("SkullCavern") || 
