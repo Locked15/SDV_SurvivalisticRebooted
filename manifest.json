@@ -1,0 +1,10 @@
+﻿{
+    "Name": "Survivalistic for .NET5",
+    "Author": "Ophaneom and Locked15",
+    "Version": "1.1",
+    "Description": "Adds some survival odds to the game.",
+    "UniqueID": "Ophaneom.Survivalistic",
+    "EntryDll": "Survive_Net5.dll",
+    "MinimumApiVersion": "3.0.0",
+    "UpdateKeys": [ "Nexus:12179" ]
+}
