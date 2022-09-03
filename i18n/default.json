@@ -61,5 +61,16 @@
   "wof-colored-special-des": "Enables or Disables colored hover text in 'Walk Of Life' integration.",
 
   "non-supported-food": "Allow Non-Supported Food",
-  "non-supported-food-des": "If sets true, mod will automatically create values to eaten food if it doesn't presented in databases."
+  "non-supported-food-des": "If sets true, mod will automatically create values to eaten food if it doesn't presented in databases.",
+
+  "sleep-options": "Sleep Options",
+
+  "sleep-decrease": "Sleep Decreases Status",
+  "sleep-decrease-des": "If sets enabled, after sleep you're statuses will be decreased (hunger and thirst will extend).",
+
+  "hunger-increase-after-sleep": "Hunger Increase",
+  "hunger-increase-after-sleep-des": "Accurate value, what will added to hunger value after sleep.\nRequire 'Sleep Decrease' to work.",
+
+  "thirst-increase-after-sleep": "Thirst Increase",
+  "thirst-increase-after-sleep-des": "Accurate value, what will added to thirst value after sleep.\nRequire 'Sleep Decrease' to work."
 }

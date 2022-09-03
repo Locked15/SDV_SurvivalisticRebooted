@@ -29,8 +29,11 @@ namespace Survivalistic
             helper.Events.GameLoop.UpdateTicked += OnUpdate;
             helper.Events.GameLoop.TimeChanged += OnTimeChanged;
             helper.Events.GameLoop.SaveLoaded += OnSaveLoaded;
+            helper.Events.GameLoop.DayStarted += OnDayStarted;
+
             helper.Events.Multiplayer.PeerConnected += OnPlayerConnected;
             helper.Events.Multiplayer.ModMessageReceived += OnMessageReceived;
+
             helper.Events.Display.RenderingHud += Renderer.OnRenderingHud;
             helper.Events.GameLoop.ReturnedToTitle += OnReturnToTitle;
 
@@ -81,7 +84,10 @@ namespace Survivalistic
             NetController.Sync();
         }
 
+        private void OnDayStarted(object sender, DayStartedEventArgs e)
+        {
 
+        }
 
         private void OnSaveLoaded(object sender, SaveLoadedEventArgs e)
         {
@@ -243,6 +249,46 @@ namespace Survivalistic
                     tooltip: () => Helper.Translation.Get("non-supported-food-des"),
                     getValue: () => config.non_supported_food,
                     setValue: value => config.non_supported_food = value
+                );
+                #endregion
+
+                #region Sleep options.
+
+                // Title.
+                configMenu.AddSectionTitle(
+                    mod: ModManifest,
+                    text: () => Helper.Translation.Get("sleep-options")
+                );
+
+                // Main Setting.
+                configMenu.AddBoolOption(
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("sleep-decrease"),
+                    tooltip: () => Helper.Translation.Get("sleep-decrease-des"),
+                    getValue: () => config.decrease_values_after_sleep,
+                    setValue: value => config.decrease_values_after_sleep = value
+                );
+
+                // Hunger.
+                configMenu.AddNumberOption(
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("hunger-increase-after-sleep"),
+                    tooltip: () => Helper.Translation.Get("hunger-increase-after-sleep-des"),
+                    getValue: () => config.food_decrease_after_sleep,
+                    setValue: value => config.food_decrease_after_sleep = value,
+                    min: -100,
+                    max: 100
+                );
+
+                // Thirst.
+                configMenu.AddNumberOption(
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("thirst-increase-after-sleep"),
+                    tooltip: () => Helper.Translation.Get("thirst-increase-after-sleep-des"),
+                    getValue: () => config.thirst_decrease_after_sleep,
+                    setValue: value => config.thirst_decrease_after_sleep = value,
+                    min: -100,
+                    max: 100
                 );
                 #endregion
 

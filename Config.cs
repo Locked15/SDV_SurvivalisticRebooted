@@ -22,5 +22,11 @@
         public bool wof_colored_bar { get; set; }
 
         public bool non_supported_food { get; set; }
+
+        public bool decrease_values_after_sleep { get; set; }
+
+        public int food_decrease_after_sleep { get; set; }
+
+        public int thirst_decrease_after_sleep { get; set; }
     }
 }
