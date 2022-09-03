@@ -1,6 +1,6 @@
 ﻿using StardewModdingAPI;
 
-namespace Survivalistic.Framework.Common
+namespace Survive_Net5.Framework.Common
 {
     public class Debugger
     {

@@ -1,4 +1,4 @@
-﻿namespace Survivalistic.Framework.Bars
+﻿namespace Survive_Net5.Framework.Bars
 {
     public class BarsDatabase
     {

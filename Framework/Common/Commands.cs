@@ -1,10 +1,9 @@
 ﻿using StardewModdingAPI;
 using StardewValley;
-using Survivalistic.Framework.Bars;
-using Survivalistic.Framework.Networking;
-using Survive_Net5.Framework.Common;
+using Survive_Net5.Framework.Bars;
+using Survive_Net5.Framework.Networking;
 
-namespace Survivalistic.Framework.Common
+namespace Survive_Net5.Framework.Common
 {
     public class Commands
     {

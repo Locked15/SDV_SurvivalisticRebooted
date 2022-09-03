@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Survivalistic.Framework.Databases
+namespace Survive_Net5.Framework.Databases
 {
     public class Tools
     {

@@ -1,16 +1,15 @@
 ﻿using StardewModdingAPI;
 using StardewModdingAPI.Events;
-using Survivalistic.Framework.Bars;
-using Survivalistic.Framework.Common;
-using Survivalistic.Framework.Common.Affection;
-using Survivalistic.Framework.Databases;
-using Survivalistic.Framework.Interfaces;
-using Survivalistic.Framework.Networking;
-using Survivalistic.Framework.Rendering;
+using Survive_Net5.Framework.Bars;
 using Survive_Net5.Framework.Common;
+using Survive_Net5.Framework.Common.Affection;
+using Survive_Net5.Framework.Databases;
 using Survive_Net5.Framework.Integrations;
+using Survive_Net5.Framework.Interfaces;
+using Survive_Net5.Framework.Networking;
+using Survive_Net5.Framework.Rendering;
 
-namespace Survivalistic
+namespace Survive_Net5
 {
     public class ModEntry : Mod
     {
@@ -86,7 +85,10 @@ namespace Survivalistic
 
         private void OnDayStarted(object sender, DayStartedEventArgs e)
         {
+            data.actual_hunger -= config.food_decrease_after_sleep;
+            data.actual_thirst -= config.thirst_decrease_after_sleep;
 
+            OnUpdate(default, default);
         }
 
         private void OnSaveLoaded(object sender, SaveLoadedEventArgs e)

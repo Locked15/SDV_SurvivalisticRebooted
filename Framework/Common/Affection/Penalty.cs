@@ -1,9 +1,9 @@
 ﻿using StardewModdingAPI;
 using StardewValley;
-using Survivalistic.Framework.Bars;
-using Survivalistic.Framework.Networking;
+using Survive_Net5.Framework.Bars;
+using Survive_Net5.Framework.Networking;
 
-namespace Survivalistic.Framework.Common.Affection
+namespace Survive_Net5.Framework.Common.Affection
 {
     public class Penalty
     {

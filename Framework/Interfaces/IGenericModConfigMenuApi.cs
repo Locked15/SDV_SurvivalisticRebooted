@@ -1,7 +1,7 @@
 ﻿using System;
 using StardewModdingAPI;
 
-namespace Survivalistic.Framework.Interfaces
+namespace Survive_Net5.Framework.Interfaces
 {
     /// <summary>The API which lets other mods add a config UI through Generic Mod Config Menu.</summary>
     public interface IGenericModConfigMenuApi

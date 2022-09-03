@@ -3,7 +3,7 @@ using DaLion.Stardew.Professions.Framework.Events.Ultimate;
 using StardewValley;
 using System;
 
-namespace Survivalistic.Framework.Interfaces
+namespace Survive_Net5.Framework.Interfaces
 {
     /// <summary>Interface for the Immersive Professions' API.</summary>
     /// <remarks>Version 5.0.2</remarks>

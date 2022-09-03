@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using StardewModdingAPI;
 using StardewValley;
-using Survivalistic.Framework.Bars;
-using Survivalistic.Framework.Databases;
 
-namespace Survivalistic.Framework.Common
+namespace Survive_Net5.Framework.Common
 {
     public class Buffs
     {
@@ -30,7 +25,7 @@ namespace Survivalistic.Framework.Common
                     if (fullness_buff == null)
                     {
                         fullness_buff = new Buff(ModEntry.instance.Helper.Translation.Get("buff.fullness.description"), 0, "SURV_Fullness", 28)
-                        {                            
+                        {
                             displaySource = ModEntry.instance.Helper.Translation.Get("buff.fullness.source")
                         };
 

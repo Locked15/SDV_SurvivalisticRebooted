@@ -3,13 +3,13 @@ using StardewModdingAPI.Events;
 using StardewValley;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Survivalistic.Framework.Bars;
-using Survivalistic.Framework.Common;
+using Survive_Net5.Framework.Bars;
+using Survive_Net5.Framework.Common;
 using DaLion.Stardew.Professions.Framework.Ultimates;
 using System;
 using Survive_Net5.Framework.Integrations;
 
-namespace Survivalistic.Framework.Rendering
+namespace Survive_Net5.Framework.Rendering
 {
     public class Renderer
     {

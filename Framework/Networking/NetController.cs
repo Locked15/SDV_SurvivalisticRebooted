@@ -2,12 +2,11 @@
 using StardewModdingAPI.Events;
 using StardewValley;
 using System.Collections.Generic;
-using Survivalistic.Framework.Common;
-using Survivalistic.Framework.Bars;
-using Survivalistic.Framework.Databases;
 using Survive_Net5.Framework.Common;
+using Survive_Net5.Framework.Bars;
+using Survive_Net5.Framework.Databases;
 
-namespace Survivalistic.Framework.Networking
+namespace Survive_Net5.Framework.Networking
 {
     public class NetController
     {

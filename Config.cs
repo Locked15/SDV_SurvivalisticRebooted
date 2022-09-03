@@ -1,4 +1,4 @@
-﻿namespace Survivalistic
+﻿namespace Survive_Net5
 {
     public class Config
     {

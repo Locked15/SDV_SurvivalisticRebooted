@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using StardewModdingAPI;
 using StardewValley;
-using Survivalistic.Framework.Bars;
-using Survivalistic.Framework.Common.Affection;
-using Survivalistic.Framework.Databases;
+using Survive_Net5.Framework.Bars;
+using Survive_Net5.Framework.Common.Affection;
+using Survive_Net5.Framework.Databases;
 
-namespace Survivalistic.Framework.Common
+namespace Survive_Net5.Framework.Common
 {
     public class Interaction
     {

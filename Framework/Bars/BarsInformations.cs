@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 
-namespace Survivalistic.Framework.Bars
+namespace Survive_Net5.Framework.Bars
 {
     public class BarsInformations
     {

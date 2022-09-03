@@ -1,7 +1,6 @@
 ﻿using StardewModdingAPI;
-using Survivalistic.Framework.Bars;
 
-namespace Survivalistic.Framework.Common.Affection
+namespace Survive_Net5.Framework.Common.Affection
 {
     public static class Benefits
     {

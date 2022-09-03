@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using StardewModdingAPI;
 
-namespace Survivalistic.Framework.Databases
+namespace Survive_Net5.Framework.Databases
 {
     class DBController
     {

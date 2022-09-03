@@ -1,6 +1,6 @@
 ﻿using StardewModdingAPI;
 using StardewValley;
-using Survivalistic.Framework.Interfaces;
+using Survive_Net5.Framework.Interfaces;
 using System;
 using static DaLion.Common.Integrations.WalkOfLife.IImmersiveProfessions;
 
@@ -45,7 +45,7 @@ namespace Survive_Net5.Framework.Integrations
         {
             get
             {
-                if (Survivalistic.ModEntry.config.walk_of_life_support)
+                if (ModEntry.config.walk_of_life_support)
                     return instance;
 
                 else

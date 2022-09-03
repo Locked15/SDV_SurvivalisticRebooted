@@ -3,7 +3,7 @@ using StardewModdingAPI;
 using Microsoft.Xna.Framework;
 using Survive_Net5.Framework.Integrations;
 
-namespace Survivalistic.Framework.Bars
+namespace Survive_Net5.Framework.Bars
 {
     public static class BarsPosition
     {
